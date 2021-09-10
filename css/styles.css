@@ -1,0 +1,14 @@
+.tab-space{
+    text-align: left;
+    word-spacing: 75px;
+    text-overflow: clip;
+}
+
+.form-container{
+    padding: 5%;
+    background-color: orange;
+}
+
+.racer-list{
+    background-image: url('../images/2022_f1.jpg');
+}

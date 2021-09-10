@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Race API</title>
+<style>
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    th, td{
+        padding: 10px 20px;
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body id='body'>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="form-container">
+                    <form name="testData" id="testDataForm">
+                        <label for="season">First Name</label>
+                        <input type="text" name="season" id="season">
+                        
+                        <label for="round">Last Name</label>
+                        <input type="text" name="round" id="round">
+                        
+                        <button class="btn btn-primary" type="submit" id="submitButton">Submit</button>
+                        <button class="btn btn-primary" onclick="clear_data()">Clear</button>
+                    </form>
+                </div>
+                    <section class="list-group racer-list">
+                        <div class="list-group-item list-group-item-action list-group-item-light tab-space">Position Name Nationality Sponsor Points</div>
+                    </section>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
